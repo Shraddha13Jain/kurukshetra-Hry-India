@@ -1,0 +1,207 @@
+<!DOCtype html>
+<html>
+<head>
+<title>KURUKSHETRA</title>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+.top{
+margin:0px;
+padding:0px;
+list-style:none;
+}
+.top .toplist{
+float:left;
+height:40px;
+width:150px;
+background-color:black;
+opacity:.8;
+line-height:40px;
+text-align:center;
+font-size:20px;
+}
+.top .toplist a{
+text-decoration:none;
+color:white;
+display:block;
+}
+.top .toplist a:hover{
+background-color:green;
+}
+.top .toplist .top .toplist{
+display:none;
+}
+.top .toplist:hover .top .toplist{
+display:block;
+}
+
+body
+{
+  margin: 0;  
+  background: #e6e6e6;  
+} 
+p{
+font-size:20px;
+margin-left:70px;
+}
+</style>
+</head>
+<body>
+<div style="border:solid black 1px;">
+<div id="logo" style="height:140px width:150px;">
+<img class="logo" src="logo.jpg" height="120px" width="100px" style="float:left;">
+<img src="digital-india.jpg"  height="140px" width="180px" style="float:right; margin-right:20px;"></div>
+<div id="logo text" width="100px">
+<h1>जिला कुरुक्षेत्र</h1>
+<h1> DISTRICT KURUKSHETRA</h1>
+</div>
+</div>
+<div id="navbar">
+<ul class="top">
+<li class="toplist"><a href="kkr.html">Home</a></li>
+<li class="toplist"><a href="history.html">History</a></li>
+<li class="toplist"><a href="culture.html">Culture</a></li>
+<li class="toplist"><a href="physical ascpects.html">Phyiscal Ascpects</a></li>
+<li class="toplist"><a href="maps.html">Maps</a></li>
+<li class="toplist"><a href="WHO;S WHO.html">Government</a>
+      <ul class="top">
+	  <li class="toplist"><a href="WHO;S WHO.html">WHO'S WHO</a></li>
+	  <li class="toplist"><a href="mygovt.html">My Government</a></li>
+	  <li class="toplist"><a href="organization.html">Organization</a></li>
+	  <li class="toplist"><a href="success stories.html">Success Stories</a></li>
+	  <li class="toplist"><a href="demography.html">Demography</a></li>
+	  </ul>
+</li>
+<li class="toplist"><a href="inkkr.html">Places To Visit</a>
+</li>
+<li class="toplist"><a href="">Facilities</a>
+      <ul class="top">
+      <li class="toplist"><a href="medical.html">Medical Facilities</a></li>
+      <li class="toplist"><a href="connectivity.html">Connectivity</a></li>
+      <li class="toplist"><a href="education.html">Education</a></li>
+      </ul>
+</li>
+<li class="toplist"><a href="photo gallery.html">Photo Gallery</a>
+   <ul class="top">
+	  <li class="toplist"><a href="bms.html">Brahma-Sarovar</a></li>
+	  <li class="toplist"><a href="sctgallery.html">Sheikh Chilli's Tomb</a></li>
+	  <li class="toplist"><a href="pzgallery.html">Pipli Zoo</a></li>
+	  <li class="toplist"><a href="kcpgallery.html">Kalpana Chawla Planetarium</a></li>
+	  <li class="toplist"><a href="kmgallery.html">Krishna Museum</a></li>
+	  <li class="toplist"><a href="pngallery.html">Panorma</a></li>
+	  <li class="toplist"><a href="nitgallery.html">NIT,kkr</a></li>
+	  <li class="toplist"><a href="tbtgallery.html">Tirupati Balaji Temple</a></li>
+	  <li class="toplist"><a href="kukgallery.html">Kurukshetra University</a></li>
+	  <li class="toplist"><a href="spgallery.html">Shakti Peeth</a></li>
+	  <li class="toplist"><a href="jsgallery.html">Jyotisagar</a></li>
+   </ul>
+</li>
+<li class="toplist"><a href="registration.html">Registration Form</a></li>
+<li class="toplist"><a href="events.html">Events</a></li>
+<li class="toplist"><a href="cnctus.html">Contact Us</a></li>
+</ul>
+</div>
+<img src="k1.jpg" style="width:100%;">
+<br><br><br>
+<script>
+function validateForm() {
+   var m=document.forms["myForm"]["age"].value;
+   var c=document.myForm.password.value;
+   var x=document.myForm.email.value;  
+   var atposition=x.indexOf("@");  
+   var dotposition=x.lastIndexOf("."); 
+      if(m<=0||m>100)
+          {alert("age shoule be greater than 0 and less than 100");
+           return false;}
+      else if(c.length<8){  
+           alert("Password must be at least 8 characters long.");  
+           return false; } 	
+      else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+           alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+           return false;  
+           }  
+		   else 
+		   {alert("form submitted");
+		   return true;
+}}
+</script>
+<h2 style="text-align:center;">REGISTRATION FORM</h2>
+<form target="_blank" method="get" name ="myForm" onsubmit="return validateForm()" style="width:100%;">
+<fieldset style="width:95%;">
+<legend><h3>REGISTRATION FORM</h3></legend>
+<table>
+<tr>
+<td><label for="name"><h4>NAME : </h4></label> </td>
+<td colspan="9"><input id="name"  type="text" maxlength="25" name="name"  placeholder="abc" autofocus required ></td></tr>
+<tr>
+<td><label for="age"><h4>AGE : </h4></label> </td>
+<td colspan="9"><input id="age"  type="number" name="age"></td>
+</tr>
+<tr>
+ <td><label for="dob"><h4> DATE OF BIRTH : </h4></label></td>
+ <td colspan="9"> <input type="date" id="dob" name="dob"  required></td>
+ </tr>
+ <tr>
+<td><label for="gender"><h4>GENDER : </h4></label></td>
+<td colspan="3"><input type="radio" name="gender" id="male" value="male">
+<label for="male">male</label></td>
+<td colspan="3"><input type="radio" name="gender" id="female" value="female">
+<label for="female">female</label></td>
+<td colspan="3"><input type="radio" name="gender" id="other" value="other">
+<label for="other">other</label></td>
+</tr>
+<tr>
+<td> <label for="mobno"><h4>MOBILE NUMBER : </h4></label></td>
+<td><input type="tel" id="mobno" name="mobno" placeholder="123456789" pattern="[0-9]{9}" required></td>
+</tr>
+<tr>
+<td><label for="email" ><h4> EMAIL : </h4></label></td>
+<td><input type="email" name="email" required></td></tr>
+<tr>
+<td><label for="address"><h4>ADDRESS: </h4></label></td>
+<td><input id="address"  type="text" name="address"></td>
+</tr>
+<tr>
+<td ><label for="members"><h4>FAMILY MEMBERS : </h4></label></td>
+<td><pre>          <input type="checkbox" id="mother" name="members" value="mother"><label for="mother">mother  </label></pre></td> 
+<td><pre><input type="checkbox" id="father" name="members" value="father"><label for="father">father    </label></pre></td>  
+<td><pre><input type="checkbox" id="brother" name="members" value="brother"><label for="brother">brother   </label></pre></td>  
+<td><pre><input type="checkbox" id="sister" name="members" value="sister"><label for="sister">sister    </label></pre></td>  
+<td><pre><input type="checkbox" id="grandmother" name="members" value="grandmother"><label for="grandmother">grandmother  </label><pre></td> 
+</tr>
+<tr>
+<td></td>  
+<td><pre>          <input type="checkbox" id="grandfather" name="members" value="grandfather"><label for="grandfather">grandfather   </label></pre></td> 
+<td><pre><input type="checkbox" id="cousins" name="members" value="cousins"><label for="cousins">cousins    </label></pre></td>  
+<td><pre><input type="checkbox" id="uncle" name="members" value="uncle"><label for="uncle">uncle    </label></pre></td>
+<td><pre><input type="checkbox" id="aunt" name="members" value="aunt"><label for="aunt">aunt    </label></pre></td>
+</tr>
+<tr>
+<td><label for="password"><h4>PASSWORD : </label></td>
+<td><input type="password" id="password" name="password" required></h4></td>
+</tr>
+</table>
+<center><input type="reset"> 
+ <input type="submit" value="submit"><center>
+</fieldset>
+
+<br><br><br><br>
+<div style=" background-color:black;">
+<div>
+<h1 style="color:white;">EXTERNAL LINKS:</h1>
+<abbr title="facebook"><a href="https://www.facebook.com/"><img src="fb.jpg" height="50" width="50" style="margin-left:1%;" ></a></abbr>
+<abbr title="instagram"><a href="https://www.instagram.com/?hl=en"><img src="insta.jpg" height="50" width="50" style="margin-left:1%;" ></a></abbr>
+<abbr title="gmail"><a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#">
+<img src="gmail.jpg" height="50" width="50" style="margin-left:1%;" ></a></abbr>
+<abbr title="youtube"><a href="https://www.youtube.com/"><img src="youtube.jpg" height="50" width="50" style="margin-left:1%;" ></a></abbr>
+<abbr title="yahoo"><a href="https://in.yahoo.com/?p=us"><img src="yahoo.jpg" height="50" width="50" style="margin-left:1%;" ></a></abbr>
+</div>
+<pre style="color:white; text-align:center;">content owned by district administration
+     district kurukshetra,haryana  developed and hosted by shraddha
+	 government of india.
+
+	 last updated :20 may 2019.
+</pre>
+<center><img src="last.jpg"></center></div>
+
+</body>
+</html>
